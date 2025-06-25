@@ -36,7 +36,7 @@ _Add screenshots or a demo video here once the project is running._
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/your-username/velvetbeats.git
+git clone https://nandinipanchal097-alt.github.io/responsive-music-webapp/
 cd velvetbeats
 ```
 
