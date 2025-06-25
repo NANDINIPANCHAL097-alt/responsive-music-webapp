@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+.sidebar {
+  width: 200px;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.top-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.hero {
+  margin-top: 20px;
+}
+
+.playlists {
+  margin-top: 30px;
+}
+
+.playlist-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.playlist-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 150px;
+}
+
+.album-thumb {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.music-player {
+  background: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#progress-bar {
+  background: #ddd;
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  position: relative;
+}
+
+#progress {
+  background: #1f1f1f;
+  height: 100%;
+  width: 0%;
+  border-radius: 3px;
+}
+
+#volume {
+  margin-top: 10px;
+  width: 100%;
+}

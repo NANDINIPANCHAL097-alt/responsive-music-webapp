@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTunes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">MyTunes</h1>
+    <ul>
+      <li class="active">Home</li>
+      <li>Browse</li>
+      <li>Library</li>
+      <li>Search</li>
+      <li>Profile</li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <header class="top-bar">
+      <input type="text" placeholder="Search for songs, artists..." />
+    </header>
+
+    <section class="hero">
+      <h2>Welcome Back</h2>
+      <p>My personal playlist</p>
+    </section>
+
+    <section class="playlists">
+      <h3>Featured Playlists</h3>
+      <div class="playlist-grid">
+        <div class="playlist-card" onclick="loadSong(songs[1]); playSong();">
+          <img src="images/cover1.jpg" alt="album 1" class="album-thumb" />
+          <h4>romantic</h4>
+        </div>
+        <div class="playlist-card" onclick="loadSong(songs[2]); playSong();">
+          <img src="images/cover2.jpg" alt="album 2" class="album-thumb" />
+          <h4>chill-phill</h4>
+        </div>
+        <div class="playlist-card" onclick="loadSong(songs[3]); playSong();">
+          <img src="images/cover3.jpg" alt="album 3" class="album-thumb" />
+          <h4>Workout Anthem</h4>
+        </div>
+        <div class="playlist-card" onclick="loadSong(songs[4]); playSong();">
+  <img src="images/cover1.jpg" alt="New Song" class="album-thumb" />
+  <h4>sad</h4>
+</div>
+
+      </div>
+    </section>
+
+    <section class="music-player">
+      <div class="now-playing">
+        <img id="album-art" src="images/cover1.jpg" alt="Cover" class="album-thumb" />
+        <div>
+          <h4 id="title">Tere Sang</h4>
+          <p id="artist">Unknown</p>
+        </div>
+      </div>
+      <audio id="audio" src="music/song2.mp3"></audio>
+
+     
+
+      
+
+      <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play">▶️</button>
+        <button id="next">⏭️</button>
+      </div>
+
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+        <span id="duration">0:00</span>
+      </div>
+
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
